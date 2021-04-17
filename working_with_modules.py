@@ -13,7 +13,17 @@ for l in lf:
 b = random.randint(1, 1000)
 print(b)
 
-import threading as th
-
 c = sys.path
 print(c)
+
+
+import threading as th
+
+d = th.TIMEOUT_MAX
+print(d)
+
+# import all definition from a module. this is not advised as it can cause name colision
+from math import *
+
+e = pi
+print(e)
